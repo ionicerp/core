@@ -29,15 +29,15 @@
                 </li>
             </ul>
             <div class="d-flex me-2">
-                <select class="form-select" aria-label="company">
-                    <option selected>Select company</option>
-                    <option value="1">Quick Save Automart (M)</option>
+                <select class="form-select" aria-label="company" (change)="setOrganizationId($event)">
+                    <option value="">Select company</option>
+                    <option value="quicksave2u">Quick Save Automart (M)</option>
                 </select>
             </div>
             <div class="d-flex">
-                <select class="form-select" aria-label="company">
-                    <option selected>Select branch</option>
-                    <option value="1">USJ</option>
+                <select class="form-select" aria-label="company"  (change)="setBusinessUnitId($event)">
+                    <option value="">Select branch</option>
+                    <option value="usj">USJ</option>
                 </select>
             </div>
         </div>
